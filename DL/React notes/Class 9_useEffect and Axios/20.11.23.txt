@@ -1,0 +1,58 @@
+useEffect: The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+    Syntax:
+
+        import { useEffect } from 'react';
+
+        useEffect(callbackFunc, dependencies);
+
+> Under dependencies, we can config state variables. When state variable value is changing automatically source code present in callback func will be executed.
+
+> Under dependencies, if we don't add any dependencies callbackFunc will be executed for once onload of the component.
+
+    useEffect(() => {
+        // Source code present under function will be executed on load of the component
+    }, []); 
+
+    useEffect(() => {
+        // Source code present under this function will be executed on load as well as on change of dependency value of the component.
+    }, [dependency1, dependency2,..., dependencyN]);
+
+    useEffect(() => {
+
+
+        return () => {
+            // Source code present under this will be executed on component destory.
+        };
+    }, []);
+
+XMLHttpRequest()
+
+    - AXIOS
+
+npm install axios
+
+    import axios from 'axios';
+
+    axios.get(url)
+
+    axios.post(url, request);
+
+    axios.put(url, request)
+
+    axios.delete(url);
+
+
+100 - 600
+
+< 400 - Success (axios will call then method)
+
+>= 400 - Failure / Error (axios will call catch method)
+
+    axio.get(url).then((response) => {
+
+    }).catch((error) => {
+
+    });

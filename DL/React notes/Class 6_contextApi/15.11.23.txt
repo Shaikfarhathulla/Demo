@@ -1,0 +1,20 @@
+Prop drilling: Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely. At the end, it's a long chain of component dependencies that can be difficult to manage and maintain.
+
+Context API: Context API allows data to be passed through a component tree without having to pass props manually at every level. This makes it easier to share data between components.
+
+import React from 'react';
+
+const contextInstance = React.createContext(initialValue);
+
+
+Parent Component:
+<contextInstance.Provider value={information}>
+    <ChildComponent/>
+</contextInstance.Provider> 
+
+
+Child Component:
+
+import { useContext } from 'react';
+
+const data = useContext(contextInstance);

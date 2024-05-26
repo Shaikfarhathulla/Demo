@@ -1,0 +1,15 @@
+Map Function: Using this we can execute the html source code for no of elements present in the array.
+
+    Syntax:
+
+        return (
+            <div>
+
+                {[value1, value2, value3,..., valueN].map(function(value) {
+                    <div></div>
+                })}
+            
+            </div>
+        )
+
+    div tag present in map function will be executed for n no of values present in array.

@@ -1,0 +1,40 @@
+Props (Properties): Props are a mechanism for passing data from a parent component to a child component. They allow you to send values, functions, or any other type of data to a React component, enabling dynamic and interactive behavior in your application.
+
+
+    <tagName attr1=value1 attr2=value2>
+
+        props - {
+            attr1: value1,
+            attr2: value2
+        }
+
+Parent 2 Child - String, Number, Boolean, Array & Object
+
+Child 2 Parent - Functions
+
+Hooks:
+
+useState()
+
+> In React, useState is a hook that allows functional components to manage state. Before the introduction of hooks in React 16.8, state management was primarily done in class components. With the advent of hooks, functional components can now manage state using the useState hook.
+
+    Syntax:
+
+        const [variableName, setVariableName] = useState(initialValue);
+
+The useState function is used to declare state variables in functional components. It returns an array with two elements: the current state value and a function that lets you update it.
+
+
+var a = 10;
+
+a = 20
+
+Voters:
+
+    Name
+
+    Age
+
+    Consistuency
+
+    

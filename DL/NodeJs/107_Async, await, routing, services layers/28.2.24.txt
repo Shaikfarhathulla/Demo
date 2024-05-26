@@ -1,0 +1,27 @@
+Express Routing:
+
+const express = require('express');
+const router = express.Router();
+
+
+router.get(url, callback);
+router.post(url, callback);
+router.put(url, callback);
+router.patch(url, callback);
+
+router.delete(url, callback);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

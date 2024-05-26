@@ -1,0 +1,71 @@
+Component: Components are independent and reusable bits of code. 
+They serve the same purpose as JavaScript functions, but work in isolation and return HTML. 
+> A React functional component is a simple JavaScript function that accepts props and returns a React element.
+Components come in two types
+1. Class components 
+2. Function components
+
+> In HTML way, we can understand component as custom tag.
+
+    Syntax:
+
+        function ComponentName(props) {
+            // Variables & Functions...
+            return (
+                <div>Hello</div>
+            )
+        }
+
+        export default ComponentName;
+
+
+        import ComponentName from 'relativePath';
+
+        <Component></Component>
+
+Using props (Properties), we can pass information from parent component to child and vice versa.
+> props is an optional parameter in component definition.
+
+    (<div></div>) - HTML
+
+    {variable} {functionName} - Javascript - String Interpolation
+
+Configurating bootstrap:
+
+    npm install bootstrap
+
+    npm install jquery
+
+    import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+Communication from JS & HTML
+
+    Data binding
+
+    {} - String Interpolation
+
+HTML to JS
+
+    Event binding
+
+    <tagName eventName={functionName}/>
+
+    <tagName eventName={(value1, value2,..., valueN) => functionName(value1, value2,..., valueN)}/>
+
+    onclick -> onClick
+
+    onchange -> onChange
+
+Task:
+
+Product
+
+    Name
+
+    Description
+
+    Specifications
+
+    Price
+

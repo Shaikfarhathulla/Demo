@@ -1,0 +1,20 @@
+To Setup backend application.
+
+Navigate to ec-services folder.
+
+To install all the required packages for the application use below command.
+---------------------------------------------------------------------------
+    > npm install
+
+To install nodemon globally.
+----------------------------
+    > npm install -g nodemon
+
+To start nodejs server and database.
+------------------------------------
+    > nodemon
+
+Once the server is started, it displays as below:
+-------------------------------------------------
+Server is up on running on 3001
+db is up on running

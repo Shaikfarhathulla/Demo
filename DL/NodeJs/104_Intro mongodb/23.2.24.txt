@@ -1,0 +1,70 @@
+1. SQL (Structured Query Language)
+
+    > My Sql
+
+    Database 
+
+        Tables / Stored Procedures / Views
+
+            Rows
+
+                Columns
+
+
+        Table Employee:
+
+        id      Emp id      Name        Salary      Designation             projectId
+        1       E0001       Naveen      100000      Team Lead Engineer          1
+        2       E0002       Karthik     200000      Manager                     2
+        3       E0003       Dinesh      75000      Senior Software Engineer     1
+
+
+
+        Table Project
+
+        id    Project Name      Client Name
+        1     Project 1         T Mobile
+        2     Project 2         JIO
+        3     Project 3         Apple
+
+
+
+2. No Sql (Non Query Language)
+
+    > Mongo db
+
+        Database
+
+            Collections (Collection of documents) - Array
+
+                Documents (Collection of key-value pairs) - Object
+
+                    Key-Value Pairs
+
+        Collection Employee:
+            [
+                {
+                    _id: Hash Id,
+                    empId: E0001,
+                    name: Naveen,
+                    salary: 100000,
+                    desination: Team Lead Engineer,
+                    projectId: 1,
+                },
+                {
+                    _id: Hash Id,
+                    empId: E0002,
+                    name: Karthik,
+                    salary: 200000,
+                    desination: Manager,
+                    projectId: 2,
+                },
+                {
+                    _id: Hash Id,
+                    empId: E0003,
+                    name: Dinesh,
+                    salary: 75000,
+                    desination: Senior Software Engineer,
+                    projectId: 1,
+                }
+            ]

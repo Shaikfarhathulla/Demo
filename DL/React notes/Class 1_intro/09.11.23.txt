@@ -1,0 +1,48 @@
+React JS: It's a Javascript library designed for developing web pages.
+
+Prerequisites:
+
+    HTML, CSS, JS & Bootstrap
+
+> It has been introduced by Facebook.
+> It's an open source third party library.
+> It works best to build user interfaces by combining sections of code (components) into full websites.
+> React is a JavaScript library that's used for building reactive websites. While it's not a framework, React does have a dedicated framework called Create React App that can be used to build web applications.
+
+Setup React:
+
+> Install nodejs
+
+    Download nodejs exe file using below url:
+    https://nodejs.org/en
+
+    Double click on download exec file and install it.
+
+    Once it is installed, to verify 
+
+        node -v
+
+    If it is installed, it returns version
+
+> npm install create-react-app
+> npx create-react-app project-name
+
+Using JSX - JavaScript Extension we can write both javascript and html source code inside js file.
+
+    {} - JavaScript Source code
+
+    () - HTML Source code
+
+    class ==> className
+
+    To include any css file into js file.
+
+    import 'relativePathOfCssFile';
+
+    To includes images
+
+    import imgName from 'relativePathOfImage';
+
+    {imgName}
+
+    

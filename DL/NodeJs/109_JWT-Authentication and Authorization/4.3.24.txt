@@ -1,0 +1,23 @@
+JSON Web Token:
+
+    For installing jwt:
+
+        npm install jsonwebtoken
+
+
+    const jwt = require('jsonwebtoken');
+
+    For converting plain text into encrypted value.
+
+    jwt.sign(payload, secretMsg); (Generates token)
+
+    For validating the token:
+
+    jwt.verify(token, secretMsg); (Verifies the token, if token is valid it returns information present in it.)
+
+    For converting encrypted value to plain text.
+
+    jwt.decode(token secretMsg);
+
+
+

@@ -1,0 +1,30 @@
+
+Mongoose Queries for CRUD Operations
+
+Creation:
+
+    const model = require(relativePath);
+
+    const instance = new model(payload);
+
+    instance.save();
+
+Retrieval:
+
+    model.find();
+
+    model.find({searchParam});
+
+    model.findOne({searchParam});
+
+    model.findById(_id);
+
+Update:
+
+    model.findByIdAndUpdate(_id, payload);
+
+    model.findByIdAndUpdate(_id, { $set: {}})
+
+Delete:
+
+    model.findByIdAndRemove(_id);

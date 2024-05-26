@@ -1,0 +1,78 @@
+show dbs
+use databasename (products)
+show collections
+db.collection.find()
+        db.collection.find().pretty()
+        db.collection.findOne()
+        db.collection.find({_id: ""}) - for getting a particular document from collection.
+
+db.collection.insert({brand: "Samsung", model: "Galaxy s9", price: 1000, inStock: true})
+        _id: number, string, boolean, array, ObjectId
+
+Install robo3T
+
+db.collection.remove({_id: ''});
+
+db.collection.update({_id: ''}, {$set: {active: true}});
+
+db.collection.find({filter}, {_id: 0}) - for getting particular fields from document.  0 - not required 1 - required.
+
+        db.collection.find{{filter}, {fields required or not}}.limit(5)
+
+        eg: filter == {price: {$gt: 250}, {fields required or not}}
+
+gt - greater than
+gte - greater than or equals
+
+lt - less than
+lte - less than or equals
+
+ne - not equals
+
+nin - not in 
+
+in - in - {$in: [250, 300]}
+
+db.collection.count()
+        db.collection.count({price: 1000}) - counts no of poducts with price == 1000
+
+
+
+
+
+Mongoose: Mongoose is a JavaScript object-oriented programming library that creates a connection between MongoDB and the Node. js JavaScript runtime environment.
+
+npm install mongoose --save
+
+> Establishing mongodb connection
+
+const mongodbConnection = async () => {
+    try {
+        await mongoose.connect(url);
+        console.log(success message);
+    } catch(error) {
+        console.log(error message);
+    }
+};
+
+mongodbConnection();
+
+Schema:
+Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
+
+const mongoose = require('mongoose');
+
+const schemaName = mongoose.Schema({
+    fieldName: {
+        type: 'SchemaType'
+    }
+});
+
+Model: Models are responsible for creating and reading documents from the underlying MongoDB database.
+
+const modelName = mongoose.model(collectionName, schemaName);
+
+
+
+
+

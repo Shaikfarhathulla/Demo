@@ -1,0 +1,71 @@
+
+For creating route:
+
+    const express = require('express');
+    const app = express();
+
+    app.methodName(routeName, callbackFunc);
+
+    // For retrieving all the records
+    app.get('/users', function(request, response) {
+
+    });
+
+    // Create a new record
+    app.post('/users', function(request, response) {
+        
+    });
+
+    // Updating the record
+    app.put('/users', function(request, response) {
+        
+    });
+
+    // Partial updation of the record
+    app.patch('/users', function(request, response) {
+        
+    });
+
+    // Deletion of the record.
+    app.delete('/users', function(request, response) {
+        
+    });
+
+nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+nodemon does not require any additional changes to your code or method of development. nodemon is a replacement wrapper for node. To use nodemon, replace the word node on the command line when executing your script.
+
+    Syntax:
+
+        npm i nodemon
+
+Controller: Controllers are responsible for handling incoming requests and returning responses to the client. A controller's purpose is to receive specific requests for the application. The routing mechanism controls which controller receives which requests.
+
+    file-name.ctrl.js
+
+
+In url
+
+> Route Parameters: Collection of values in the url.
+
+    http://localhost:4000/routeName/paramValue1/paramValue2/ .... /paramValueN
+
+
+req.params - Object
+
+
+> Query Parameters: Collection of key values in the url.
+
+    http://localhost:4000/routeName/paramValue1?queryParam1=value1&queryParam2=value2& .... queryParamN=valueN
+
+    https://www.google.com/search
+    
+        ?q=controller+nodejs&
+        rlz=1C5CHFA_enIN1092IN1092&
+        oq=controller+nodejs&
+        gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDYyMjdqMGo3qAIAsAIA&
+        sourceid=chrome&
+        ie=UTF-8
+
+    req.queryParams - Object
+

@@ -1,0 +1,36 @@
+While we receive data from network to backend
+
+    JSON String / Javascript Object
+
+
+req.body = JSON.parse(req.body)
+
+Body Parser: 
+
+    Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+
+For installing:
+
+    npm install body-parser
+
+To consuming it:
+
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+
+
+1. SQL Databases: It is relational database, data stores in the form of tables.
+
+    My Sql, Postgres Sql, Oracle db, Maria db etc...
+
+2. No SQL Databases: It is non sql database, data stores in the form of collections.
+
+    Mongo db, Redis, Dynamo db etc...
+
+Mongoose: Mongodb library used for writing db queries and schemas.
+
+> Rest APIs using Promises
+
+
+    

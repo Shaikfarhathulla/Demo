@@ -1,0 +1,43 @@
+Sharing the data between routes
+
+    Url: http://domain.com/routeName/routeParam1/routeParam2/routeParam3?queryParam1=value1&queryParam2=value2&queryParam3=value3
+
+
+        /routeParam1/routeParam2/ - Route Parameters
+
+        queryParam1=value1&queryParam2=value2&queryParam3=value3 - Query Parameters
+
+Using Route Params:
+
+    <Link to={'/routeName/routeParamValue1/routeParamValue2/routeParamValueN'}></Link>
+
+
+    App.js
+
+    <Route path="/routeName/:routeParamName1/:routeParamName2/routeParamNameN"></Route>
+
+
+ to consume route param present in router.
+
+    {
+        routeParamName1: routeParamValue1,
+        routeParamName2: routeParamValue2,
+
+        routeParamNameN: routeParamValueN
+    }
+
+    import { useParams } from 'react-router-dom';
+
+    const params = useParams();
+
+Using query parameters:
+
+    <Link to={'/routeName?queryParam1=value1&queryParam2=value2&queryParam3=value3'}></Link>
+
+To consume data from query parameters
+
+    import { useSearchParams } from 'react-router-dom';
+
+    const [searchParams, setSearchParams] = useSearchParams();
+
+    searchParams.get('queryParamName');

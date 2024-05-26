@@ -1,0 +1,42 @@
+Using create-react-app we are able download project folder.
+
+SPA - Single Page Application
+
+react-2402-app
+
+    node_modules: It consists of all the packages which are required for the app.
+
+        - Package might be directly installed or it might be dependent package on the package which we are installing.
+
+    public: 
+
+        index.html ---- Output file
+
+    src
+        Component
+        App.css
+        App.js
+
+            - Default component given by react.
+
+        index.css
+        index.js
+
+            - Used to link source code present in app.js to index.html
+
+    .gitignore
+
+        - Used to stop sharing specific files to cloud.
+
+    package-lock.json
+
+        - Used to maintain packagename and versions of pacakges which used by our packages.
+
+    package.json
+
+        - Used to maintin configuration as well package names and versions used by us.
+
+    README.md
+
+        - It's text file were we can write about the project.
+

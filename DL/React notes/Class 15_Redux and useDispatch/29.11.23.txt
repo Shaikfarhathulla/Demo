@@ -1,0 +1,17 @@
+useDispatch: useDispatch hook is used to access the dispatch function. The dispatch function is a fundamental part of the Redux pattern and is used to send actions to the Redux store.
+
+import { useDispatch } from 'react-redux';
+
+const dispatch = useDispatch();
+
+dispatch({
+
+});
+
+useSelector:  useSelector hook is used to extract data from the Redux store. It allows a functional component to subscribe to the Redux store and read the state.
+
+    Syntax:
+
+        import { useSelector } from 'react-redux';
+
+        const data = useSelector((state) => state.featureName);

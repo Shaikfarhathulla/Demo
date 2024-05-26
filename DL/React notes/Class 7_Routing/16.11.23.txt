@@ -1,0 +1,35 @@
+React Routing: It enables the creation of single-page web or mobile apps that allow navigating without refreshing the page. 
+It also allows us to use browser history features while preserving the right application view.
+
+Installation: 
+
+npm install react-router-dom
+
+index.js
+import { BrowserRouter } from 'react-router-dom';
+
+<BrowserRouter>
+    <App/>
+</BrowserRouter>
+
+App.js
+
+import { Routes, Route } from 'react-router-dom';
+
+
+    <Routes>
+        <Route path="/routeName" element={<ComponentName/>}></Route>
+        <Route path="/routeName" element={<ComponentName/>}></Route>
+        <Route path="/routeName" element={<ComponentName/>}></Route>
+        <Route path="/routeName" element={<ComponentName/>}></Route>
+    </Routes>
+
+import { Link } from 'react-router-dom';
+
+<Link to={"/routeName"}></Link>
+
+import { useNavigate } from 'react-router-dom';
+
+const navigate = useNavigate();
+
+navigate('/routeName');

@@ -1,0 +1,21 @@
+useCallback
+useMemo
+useRef
+
+Redux: Redux is a predictable state container in Javascript app. What does that mean? Well, Redux helps in state management by storing all the states which needs to be changed through out the app in one place, which we usually call it as Store.
+
+Redux Toolkit is a library that provides a set of utilities and conventions for writing Redux logic. It combines several Redux packages, including Redux DevTools, Redux Thunk, and Redux-Immutable, to create a cohesive and opinionated approach to Redux development.
+
+
+const [userInfo, setUserInfo] = useState({name: 'Lokesh'});
+
+
+userInfo = {name: 'Karthik'};
+
+
+React 
+
+react-redux
+
+Redux
+

@@ -1,0 +1,38 @@
+Forms:
+
+react-hook-form: Simple form validation with React Hook Form.
+
+    npm install react-hook-form
+
+
+import { useForm } from 'react-hook-form';
+
+const { register, formState: { errors }, handleSubmit } = useForm();
+
+register - Registers form field in useForm.
+
+    <input type="text" {...register(fieldName)} />
+
+
+        {...register(fieldName, { required: true })} 
+
+        {...register(fieldName, { required: true, minLength: count, maxLength: count, pattern: regExp})} 
+
+formState - Current state of the form
+
+    Valid
+
+    Invalid 
+
+errors - Returns errors of each form field.
+
+handleSubmit - It's a predefined function, which needs to triggered while submitting the form.
+
+    errors = {
+        firstName: {
+            type: ''
+        },
+        lastName: {
+
+        }
+    }

@@ -1,0 +1,81 @@
+Node JS:
+
+> Javascript Runtime Environment.
+> Also used for writing server side scripting
+> It used V8 Javascript engine internal.
+> Document object will not be available in Nodejs V8 Engine.
+> Ran Dial have invented of Node JS.
+> Node js is used for both client and server side scripting.
+> Using Node js we can write rest apis (Application programming interface).
+> Along with nodejs we use expressjs framework for writing rest apis.
+
+Asychronous Operation:
+
+Callback Func: A function passed as an paramter to another function is called Callback function. 
+
+    Syntax:
+
+        function func1() {
+
+        }
+
+        function func2(func1) {
+
+        }
+
+        func2(func1);
+
+Promise:
+
+    const promise = new Promise(function(resolve, reject) {
+        if () {
+            resolve(message);
+        }
+    });
+
+    promise.then(function(message) {
+
+    }).catch(function(error) {
+
+    });
+
+
+
+    async await
+
+    try {
+        await promise;
+    } catch(error) {
+
+    }
+
+http
+
+CRUD Operations:
+
+C - Create - POST
+R - Read - GET
+U - Update - PUT / PATCH
+D - Delete - DELETE
+
+100 - 600
+
+1xx - Informational
+2xx - Success 
+3xx - Redirection
+4xx - Client Errors
+5xx - Server Errors
+
+    import { getUser } from 'relativePath';
+
+
+Common JS Pattern
+
+    require('relativePath' / packageName); - Access resource into the current file.
+
+
+const http = require('http');
+
+const server = http.createServer(callbackFunc);
+
+server.listen(portNo, callbackFunc);
